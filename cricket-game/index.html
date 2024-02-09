@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Cricket Game</h1>
+    <!-- bat -->
+    <button id="button-choice"
+      onclick="
+        let usermsg='bat';
+       let computermsg= computerchoice();
+       let resultMsg=finalResult('Bat',computermsg);
+       displayresult(usermsg,computermsg,resultMsg);
+     "
+    >
+      <img id="img-choice" src="images/bat.png" alt="bat-img">
+    </button>
+
+    <!-- ball game -->
+    <button  id="button-choice"
+      onclick="
+      usermsg='ball';
+      computermsg= computerchoice();
+      resultMsg=finalResult('Ball',computermsg);
+      displayresult(usermsg,computermsg,resultMsg);
+  "
+    >
+      <img id="img-choice" src="images/ball.png" alt="ball-img">
+    </button>
+    <!-- stump game -->
+    <button id="button-choice"
+      onclick="
+      usermsg='stump';
+     computermsg=computerchoice();
+     resultMsg=finalResult('stump',computermsg);
+     displayresult(usermsg,computermsg,resultMsg);
+      "
+    >
+      <img  id="img-choice" src="images/stump.png" alt="stump-img">
+    </button>
+
+   
+
+    <h3 id="user-msg"></h3>
+    <h3 id="comp-msg"></h3>
+    <h3 id="result-msg"></h3>
+    <h2 id="final-score"></h2>
+
+    <button class="reset"
+    onclick="
+      localStorage.clear();
+       resetscore();
+       displayresult()
+"
+  >
+    Reset
+  </button>
+
+    <script src="script.js"> </script>
+  </body>
+</html>

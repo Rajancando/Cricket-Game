@@ -1,0 +1,33 @@
+
+      body {
+        text-align: center;
+        background-color: rgb(173, 162, 147);
+      }
+      
+  
+      #button-choice{
+         height: 100px;
+         width: 100px;
+         margin: 10px;
+         background-color: rgb(133, 209, 58);
+         border-radius:50px;
+         cursor: pointer;
+
+      }
+      #button-choice:active{
+         background-color: yellow;
+     }
+      #img-choice{
+        height: 75px;
+        cursor: pointer;
+       
+      }
+      .reset{
+           color: rgb(34, 36, 33);
+           background-color: rgb(201, 181, 181);
+      }
+      .reset:active{
+          background-color: darkred;
+      }
+
+      
